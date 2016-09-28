@@ -27,7 +27,7 @@ app.get('/', function (req, res) {
 	res.status(200).send('Success');
 });
 
-app.get('*', function (req, res) {
+app.all('*', function (req, res) {
 	res.status(404).send('Nothing There');
 });
 
